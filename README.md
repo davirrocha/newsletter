@@ -6,7 +6,7 @@ Projeto de uma **Newsletter responsiva** com suporte a **tema claro e escuro**, 
 Interface simples e moderna, com formulário de inscrição e alternância de tema, ideal para projetos institucionais ou landing pages.
 
 ## 🔗 Demo
-👉 
+👉 https://davirrocha.github.io/newsletter/
 
 ---
 
