@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=DM+Sans:wght@100..1000&display=swap"
+        rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Newsletter</title>
+</head>
+
+<body>
+    <header>
+        <h1>Newsletter</h1>
+        <button class="btn-theme" type="button">Alterar tema 🌓</button>
+    </header>
+    <main>
+        <section class="newsletter">
+            <div class="newsletter__text">
+                <h2>Inscreva-se</h2>
+                <p>Receba novidades no seu email. Sem spam.</p>
+            </div>
+            <div class="newsletter__form">
+                <form action="" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Insira seu email" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Quero Receber</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter-footer">
+            <small>Newsletter <span id="ano"></span></small>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

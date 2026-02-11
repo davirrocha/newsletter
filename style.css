@@ -1,0 +1,171 @@
+/* Tema claro e escuro */
+:root {
+    --bg: #FFF;
+    --texto: #111;
+    --borda: #e5e7eb;
+    --caixa: #f8fcf9;
+    --acao: #2563eb;
+}
+
+[data-tema="escuro"] {
+    --bg: #0b1220;
+    --texto: #e5e7eb;
+    --borda: #1f2937;
+    --caixa: #111827;
+    --acao: #38bdf8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    color: var(--texto);
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--borda);
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.btn-theme {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: auto;
+    max-width: 190px;
+    padding: 8px 10px;
+    height: auto;
+    border-radius: 10px;
+    color: var(--texto);
+    border: 1px solid var(--borda);
+    background-color: var(--bg);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-theme:hover {
+    background-color: var(--caixa);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+section {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: var(--caixa);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.newsletter__text h2 {
+    font-size: 24px;
+}
+
+.newsletter__text p {
+    font-size: 19px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label,
+.form-group input {
+    display: block;
+    margin: 5px 0;
+
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--borda);
+    padding: 5px;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--acao);
+    color: #f1f1f1;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+
+.btn-submit:hover {
+    filter: brightness(0.9);
+
+}
+
+
+footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--borda);
+    margin-top: auto;
+}
+
+footer small {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:850px) {
+
+    header {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .btn-theme {
+        max-width: 160px;
+    }
+
+    section {
+        width: 85%;
+        max-width: 350px;
+    }
+}
